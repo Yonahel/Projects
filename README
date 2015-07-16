@@ -1,0 +1,4 @@
+This is my implementation of Tetris on command line in C++.
+This implementation only works on Windows, since I use conio.h for unbuffered key input and I don't use POSIX threads.
+It also does not have rotation made yet, and the scoreboard needs fixing. 
+Any comments or suggestions, let me know!

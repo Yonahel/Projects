@@ -1,3 +1,5 @@
+//Author: Yonah Elorza
+
 #ifndef  YO_H
 #define  YO_H
 #include <time.h>

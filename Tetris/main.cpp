@@ -1,4 +1,4 @@
-//Yonah Elorza
+//Author: Yonah Elorza
 
 #include "Yo.h"
 

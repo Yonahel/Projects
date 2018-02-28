@@ -1,0 +1,2 @@
+bci_sim_arm
+-DCATKIN_DEVEL_PREFIX=/home/yonahel/Projects/BCI/devel -DCMAKE_INSTALL_PREFIX=/home/yonahel/Projects/BCI/install -G Unix Makefiles

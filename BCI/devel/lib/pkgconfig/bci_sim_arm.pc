@@ -1,0 +1,8 @@
+prefix=/home/yonahel/Projects/BCI/devel
+
+Name: bci_sim_arm
+Description: Description of bci_sim_arm
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/yonahel/Projects/BCI/devel/lib 
+Requires: 

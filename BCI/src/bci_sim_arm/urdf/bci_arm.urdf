@@ -4,7 +4,7 @@
   <link name="base_link">
     <visual>
       <geometry>
-        
+        <box size="0 0 0"/>
       </geometry>
     </visual>
   </link>
@@ -12,98 +12,221 @@
   <!-- Thumb FingerLink Definition -->
   <link name="thumb1">
     <visual>
-	
+	<box size="0 0 0"/>
     </visual>
   </link>
 
   <link name="thumb2">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
   <link name="thumb3">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
   <!-- Index Finger Link Definition -->
   <link name="index1">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
   <link name="index2">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
   <link name="index3">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
   <!-- Middle Finger Link Definition -->
   <link name="middle1">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
   <link name="middle2">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
   <link name="middle3">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
   <!-- Ring Finger Link Definition -->
   <link name="ring1">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
   <link name="ring2">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
   <link name="ring3">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
   <!-- Pinky Finger Link Definition -->
   <link name="pinky1">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
 
   <link name="pinky2">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
 
 
   <link name="pinky3">
     <visual>
-	
+	<cylinder length="0" radius="0"/>
     </visual>
   </link>
+
+
+
+  <!-- Joints Definitions -->
+
+    <!-- Finger Bases to base_link Definition -->
+      <joint name="base_thumb_joint" type="revolute">
+	<parent link="base_link"/>
+	<child link="thumb1"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+      <joint name="base_index_joint" type="revolute">
+	<parent link="base_link"/>
+	<child link="index1"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+      <joint name="base_middle_joint" type="revolute">
+	<parent link="base_link"/>
+	<child link="middle1"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+
+      <joint name="base_ring_joint" type="revolute">
+	<parent link="base_link"/>
+	<child link="ring1"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+
+      <joint name="base_pinky_joint" type="revolute">
+	<parent link="base_link"/>
+	<child link="pinky1"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+
+    <!-- Thumb Joint Definition -->
+      <joint name="first_thumb_joint" type="revolute">
+	<parent link="thumb1"/>
+	<child link="thumb2"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+      <joint name="second_thumb_joint" type="revolute">
+	<parent link="thumb2"/>
+	<child link="thumb3"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+
+    <!-- Index Joint Definition -->
+      <joint name="first_index_joint" type="revolute">
+	<parent link="index1"/>
+	<child link="index2"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+      <joint name="second_index_joint" type="revolute">
+	<parent link="index2"/>
+	<child link="index3"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+
+    <!-- Middle Joint Definition -->
+      <joint name="first_middle_joint" type="revolute">
+	<parent link="middle1"/>
+	<child link="middle2"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+      <joint name="second_thumb_joint" type="revolute">
+	<parent link="middle2"/>
+	<child link="middle3"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+
+    <!-- Ring Joint Definition -->
+      <joint name="first_ring_joint" type="revolute">
+	<parent link="ring1"/>
+	<child link="ring2"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+      <joint name="second_ring_joint" type="revolute">
+	<parent link="ring2"/>
+	<child link="ring3"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+
+    <!-- Pinky Joint Definition -->
+      <joint name="first_pinky_joint" type="revolute">
+	<parent link="pinky1"/>
+	<child link="pinky2"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
+      <joint name="second_pinky_joint" type="revolute">
+	<parent link="pinky2"/>
+	<child link="pinky3"/>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<axis xyz"0 0 0" rpy="0 0 0" />
+      </joint>
+
 
 </robot>

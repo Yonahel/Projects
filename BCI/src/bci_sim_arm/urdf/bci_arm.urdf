@@ -1,10 +1,109 @@
-<?xml version="1.0"?>
-<robot name="bci_arm">
+<xml version="1.0"?>
+<robot name="bci_arm">i
+
   <link name="base_link">
     <visual>
       <geometry>
-        <cylinder length="0.6" radius="0.2"/>
+        
       </geometry>
     </visual>
   </link>
+
+  <!-- Thumb FingerLink Definition -->
+  <link name="thumb1">
+    <visual>
+	
+    </visual>
+  </link>
+
+  <link name="thumb2">
+    <visual>
+	
+    </visual>
+  </link>
+
+  <link name="thumb3">
+    <visual>
+	
+    </visual>
+  </link>
+
+  <!-- Index Finger Link Definition -->
+  <link name="index1">
+    <visual>
+	
+    </visual>
+  </link>
+
+  <link name="index2">
+    <visual>
+	
+    </visual>
+  </link>
+
+  <link name="index3">
+    <visual>
+	
+    </visual>
+  </link>
+
+  <!-- Middle Finger Link Definition -->
+  <link name="middle1">
+    <visual>
+	
+    </visual>
+  </link>
+
+  <link name="middle2">
+    <visual>
+	
+    </visual>
+  </link>
+
+  <link name="middle3">
+    <visual>
+	
+    </visual>
+  </link>
+
+  <!-- Ring Finger Link Definition -->
+  <link name="ring1">
+    <visual>
+	
+    </visual>
+  </link>
+
+  <link name="ring2">
+    <visual>
+	
+    </visual>
+  </link>
+
+  <link name="ring3">
+    <visual>
+	
+    </visual>
+  </link>
+
+  <!-- Pinky Finger Link Definition -->
+  <link name="pinky1">
+    <visual>
+	
+    </visual>
+  </link>
+
+
+  <link name="pinky2">
+    <visual>
+	
+    </visual>
+  </link>
+
+
+  <link name="pinky3">
+    <visual>
+	
+    </visual>
+  </link>
+
 </robot>

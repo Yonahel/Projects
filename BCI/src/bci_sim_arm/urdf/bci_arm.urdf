@@ -115,21 +115,21 @@
 	<parent link="base_link"/>
 	<child link="thumb1"/>
 	<origin xyz="3.5 0 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
       <joint name="base_index_joint" type="revolute">
 	<parent link="base_link"/>
 	<child link="index1"/>
 	<origin xyz="2.25 2.75 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
       <joint name="base_middle_joint" type="revolute">
 	<parent link="base_link"/>
 	<child link="middle1"/>
 	<origin xyz="0.75 2.75 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
 
@@ -137,7 +137,7 @@
 	<parent link="base_link"/>
 	<child link="ring1"/>
 	<origin xyz="-0.75 2.75 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
 
@@ -145,7 +145,7 @@
 	<parent link="base_link"/>
 	<child link="pinky1"/>
 	<origin xyz="-2.25 2.75 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
 
@@ -154,14 +154,14 @@
 	<parent link="thumb1"/>
 	<child link="thumb2"/>
 	<origin xyz="0 2.25 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
       <joint name="second_thumb_joint" type="revolute">
 	<parent link="thumb2"/>
 	<child link="thumb3"/>
 	<origin xyz="0 1.25 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
 
@@ -170,14 +170,14 @@
 	<parent link="index1"/>
 	<child link="index2"/>
 	<origin xyz="0 1.25 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
       <joint name="second_index_joint" type="revolute">
 	<parent link="index2"/>
 	<child link="index3"/>
 	<origin xyz="0 0.75 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
 
@@ -186,14 +186,14 @@
 	<parent link="middle1"/>
 	<child link="middle2"/>
 	<origin xyz="0 1.25 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
       <joint name="second_thumb_joint" type="revolute">
 	<parent link="middle2"/>
 	<child link="middle3"/>
 	<origin xyz="0 0.75 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
 
@@ -202,14 +202,14 @@
 	<parent link="ring1"/>
 	<child link="ring2"/>
 	<origin xyz="0 1.25 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
       <joint name="second_ring_joint" type="revolute">
 	<parent link="ring2"/>
 	<child link="ring3"/>
 	<origin xyz="0 0.75 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
 
@@ -218,14 +218,14 @@
 	<parent link="pinky1"/>
 	<child link="pinky2"/>
 	<origin xyz="0 1.25 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
       <joint name="second_pinky_joint" type="revolute">
 	<parent link="pinky2"/>
 	<child link="pinky3"/>
 	<origin xyz="0 0.75 0" rpy="0 0 0" />
-	<axis xyz"0 0 0" rpy="0 0 0" />
+	<axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
 
 

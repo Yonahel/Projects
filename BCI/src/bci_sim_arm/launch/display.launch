@@ -1,6 +1,6 @@
 <launch>
 	<arg name="model" default="$(find bci_sim_arm)/urdf/bci_arm.urdf"/>
-	<arg name="gui" default="false" />
+	<arg name="gui" default="true" />
 	<arg name="rvizconfig" default="$(find bci_sim_arm)/rviz/urdf.rviz" />
 	
 	<param name="robot_description" command="$(find xacro)/xacro.py $(arg model)" />

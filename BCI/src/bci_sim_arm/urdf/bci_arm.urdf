@@ -12,97 +12,127 @@
   <!-- Thumb FingerLink Definition -->
   <link name="thumb1">
     <visual>
+      <geometry>
 	<box size="2 4 0.5"/>
+      </geometry>
     </visual>
   </link>
 
   <link name="thumb2">
     <visual>
+      <geometry>
 	<cylinder length="2" radius="1"/>
+      </geometry>
     </visual>
   </link>
 
   <link name="thumb3">
     <visual>
+      <geometry>
 	<cylinder length="1" radius="1"/>
+      </geometry>
     </visual>
   </link>
 
   <!-- Index Finger Link Definition -->
   <link name="index1">
     <visual>
+      <geometry>
 	<cylinder length="2" radius="0.5"/>
+      </geometry>
     </visual>
   </link>
 
   <link name="index2">
     <visual>
+      <geometry>
 	<cylinder length="1" radius="0.5"/>
+      </geometry>
     </visual>
   </link>
 
   <link name="index3">
     <visual>
+      <geometry>
 	<cylinder length="1" radius="0.5"/>
+      </geometry>
     </visual>
   </link>
 
   <!-- Middle Finger Link Definition -->
   <link name="middle1">
     <visual>
+      <geometry>
 	<cylinder length="2" radius="0.5"/>
+      </geometry>
     </visual>
   </link>
 
   <link name="middle2">
     <visual>
+      <geometry>
 	<cylinder length="1" radius="0.5"/>
+      </geometry>
     </visual>
   </link>
 
   <link name="middle3">
     <visual>
+      <geometry>
 	<cylinder length="1" radius="0.5"/>
+      </geometry>
     </visual>
   </link>
 
   <!-- Ring Finger Link Definition -->
   <link name="ring1">
     <visual>
+      <geometry>
 	<cylinder length="2" radius="0.5"/>
+      </geometry>
     </visual>
   </link>
 
   <link name="ring2">
     <visual>
+      <geometry>
 	<cylinder length="1" radius="0.5"/>
+      </geometry>
     </visual>
   </link>
 
   <link name="ring3">
     <visual>
+      <geometry>
 	<cylinder length="1" radius="0.5"/>
+      </geometry>
     </visual>
   </link>
 
   <!-- Pinky Finger Link Definition -->
   <link name="pinky1">
     <visual>
+      <geometry>
 	<cylinder length="2" radius="0.5"/>
+      </geometry>
     </visual>
   </link>
 
 
   <link name="pinky2">
     <visual>
+      <geometry>
 	<cylinder length="1" radius="0.5"/>
+      </geometry>
     </visual>
   </link>
 
 
   <link name="pinky3">
     <visual>
+      <geometry>
 	<cylinder length="1" radius="0.5"/>
+      </geometry>
     </visual>
   </link>
 
@@ -114,38 +144,43 @@
       <joint name="base_thumb_joint" type="revolute">
 	<parent link="base_link"/>
 	<child link="thumb1"/>
-	<origin xyz="3.5 0 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="8  0 0" rpy="0 0 0" />
+	<axis xyz="6 0 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
       <joint name="base_index_joint" type="revolute">
 	<parent link="base_link"/>
 	<child link="index1"/>
-	<origin xyz="2.25 2.75 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="3.75 8 0" rpy="0 0 0" />
+	<axis xyz="3.75 6.5 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
       <joint name="base_middle_joint" type="revolute">
 	<parent link="base_link"/>
 	<child link="middle1"/>
-	<origin xyz="0.75 2.75 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="1.25 8 0" rpy="0 0 0" />
+	<axis xyz="1.25 6.5 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
 
       <joint name="base_ring_joint" type="revolute">
 	<parent link="base_link"/>
 	<child link="ring1"/>
-	<origin xyz="-0.75 2.75 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="-1.25 8 0" rpy="0 0 0" />
+	<axis xyz="-1.25 6.5 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
 
       <joint name="base_pinky_joint" type="revolute">
 	<parent link="base_link"/>
 	<child link="pinky1"/>
-	<origin xyz="-2.25 2.75 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="-3.75 8 0" rpy="0 0 0" />
+	<axis xyz="-3.75 6 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
 
@@ -153,15 +188,17 @@
       <joint name="first_thumb_joint" type="revolute">
 	<parent link="thumb1"/>
 	<child link="thumb2"/>
-	<origin xyz="0 2.25 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="0 4 0" rpy="0 0 0" />
+	<axis xyz="0 2.5 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
       <joint name="second_thumb_joint" type="revolute">
 	<parent link="thumb2"/>
 	<child link="thumb3"/>
-	<origin xyz="0 1.25 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="0 3 0" rpy="0 0 0" />
+	<axis xyz="0 1.5 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
 
@@ -169,15 +206,17 @@
       <joint name="first_index_joint" type="revolute">
 	<parent link="index1"/>
 	<child link="index2"/>
-	<origin xyz="0 1.25 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="0 2.5 0" rpy="0 0 0" />
+	<axis xyz="0 1.5 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
       <joint name="second_index_joint" type="revolute">
 	<parent link="index2"/>
 	<child link="index3"/>
-	<origin xyz="0 0.75 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="0 2 0" rpy="0 0 0" />
+	<axis xyz="0 1 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
 
@@ -185,15 +224,17 @@
       <joint name="first_middle_joint" type="revolute">
 	<parent link="middle1"/>
 	<child link="middle2"/>
-	<origin xyz="0 1.25 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="0 2.5 0" rpy="0 0 0" />
+	<axis xyz="0 1.5 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
-      <joint name="second_thumb_joint" type="revolute">
+      <joint name="second_middle_joint" type="revolute">
 	<parent link="middle2"/>
 	<child link="middle3"/>
-	<origin xyz="0 0.75 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="0 2 0" rpy="0 0 0" />
+	<axis xyz="0 1 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
 
@@ -201,15 +242,17 @@
       <joint name="first_ring_joint" type="revolute">
 	<parent link="ring1"/>
 	<child link="ring2"/>
-	<origin xyz="0 1.25 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="0 2.5 0" rpy="0 0 0" />
+	<axis xyz="0 1.5 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
       <joint name="second_ring_joint" type="revolute">
 	<parent link="ring2"/>
 	<child link="ring3"/>
-	<origin xyz="0 0.75 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="0 2 0" rpy="0 0 0" />
+	<axis xyz="0 1 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
 
@@ -217,16 +260,17 @@
       <joint name="first_pinky_joint" type="revolute">
 	<parent link="pinky1"/>
 	<child link="pinky2"/>
-	<origin xyz="0 1.25 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="0 2.5 0" rpy="0 0 0" />
+	<axis xyz="0 1.5 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
 
       <joint name="second_pinky_joint" type="revolute">
 	<parent link="pinky2"/>
 	<child link="pinky3"/>
-	<origin xyz="0 0.75 0" rpy="0 0 0" />
-	<axis xyz="0 0 0" rpy="0 0 0" />
+	<origin xyz="0 2 0" rpy="0 0 0" />
+	<axis xyz="0 1 0" rpy="0 0 0" />
+	<limit effort="100" lower="0.0" upper="0.785" velocity="0.5" />
       </joint>
-
 
 </robot>
